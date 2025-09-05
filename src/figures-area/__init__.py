@@ -1,5 +1,5 @@
 __all__ = ["Shape", "Circle", "Triangle"]
 
-from .shapes.base import Shape
-from .shapes.circle import Circle
-from .shapes.triangle import Triangle
+from .shapes import Shape
+from .shapes import Circle
+from .shapes import Triangle
