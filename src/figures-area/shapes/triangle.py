@@ -25,3 +25,9 @@ class Triangle(Shape):
         s = (self.a + self.b + self.c) / 2.0
 
         return sqrt(s * (s - self.a) * (s - self.b) * (s - self.c))
+
+    def is_right(self) -> bool:
+        """Checks if the triangle is right angled using Pythagorean theorem"""
+
+        a, b, c = sorted([self.a, self.b, self.c])
+        return c * c == b * b + a * a
